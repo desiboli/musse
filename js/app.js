@@ -7,6 +7,7 @@
 
     // Cache the Window object
     var $window = $(window);
+    var width = $window.width();
 
     $( '.hamburger' ).click(function() {
       $( this ).toggleClass( 'is-active' );
@@ -14,13 +15,16 @@
 
     var offset = 220;
 		var duration = 800;
-    $(window).scroll(function() {
-			if (jQuery(this).scrollTop() > offset) {
-        $('a.top').fadeIn(duration);
-			} else {
-	      $('a.top').fadeOut(duration);
-			}
-		});
+
+    if (width > 400) {
+      $(window).scroll(function() {
+  			if (jQuery(this).scrollTop() > offset) {
+          $('a.top').fadeIn(duration);
+  			} else {
+  	      $('a.top').fadeOut(duration);
+  			}
+  		});
+    }
 
     $('a.top').click(function(event) {
 			event.preventDefault();
