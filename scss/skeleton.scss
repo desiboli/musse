@@ -52,6 +52,37 @@ p {
   letter-spacing: 0.2rem;
 }
 
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+  line-height: 6px;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -387,7 +418,7 @@ section#cv {
       font-size: 3rem;
       font-weight: 100;
     }
-    .cv-company {
+    .cv-company a {
       font-size: 3rem;
       color: #DE3C4B;
       font-weight: bold;
@@ -407,7 +438,51 @@ section#cv {
     }
   }
 
+  /* Button 1e */
+  .btn-1 {
+  	border: 3px solid #fff;
 
+    a {
+  	  color: #fff;
+      -webkit-transition: all 0.6s;
+    	-moz-transition: all 0.6s;
+    	transition: all 0.6s;
+    }
+  }
+
+  .btn-1e {
+    display: block;
+  	overflow: hidden;
+    margin: 50px auto 10px;
+  }
+
+  .btn-1e:after {
+  	width: 100%;
+  	height: 0;
+  	top: 50%;
+  	left: 50%;
+  	background: #fff;
+  	opacity: 0;
+  	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .btn-1e:hover a,
+  .btn-1e:active a {
+  	color: #DE3C4B;
+  }
+
+  .btn-1e:hover:after {
+  	height: 260%;
+  	opacity: 1;
+  }
+
+  .btn-1e:active:after {
+  	height: 400%;
+  	opacity: 1;
+  }
 }
 section#contact {
   border-top: 1px solid;
@@ -484,6 +559,13 @@ footer {
 
   i.fa-heart {
     color: #DE3C4B;
+  }
+
+  i.fa.fa-linkedin-square,
+  i.fa.fa-github-alt {
+    color: white;
+    font-size: 4rem;
+    margin: 0 10px;
   }
 }
 
