@@ -6,7 +6,7 @@
     $('#html-css-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',
@@ -25,7 +25,7 @@
     $('#js-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',
@@ -44,7 +44,7 @@
     $('#php-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',
@@ -63,7 +63,7 @@
     $('#wp-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',
@@ -82,7 +82,7 @@
     $('#sketch-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',
@@ -101,7 +101,7 @@
     $('#drupal-circle').circliful({
         animation: 1,
         animationStep: 2,
-        animateInView: true,
+        //animateInView: true,
         foregroundBorderWidth: 5,
         backgroundBorderWidth: 5,
         backgroundColor: '#28323A',

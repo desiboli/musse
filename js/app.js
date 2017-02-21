@@ -132,7 +132,7 @@
 
 
 /* -----------------------------------------------
-/* How to use? : Check the GitHub README
+/* Uncomment this to see particles locally
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */

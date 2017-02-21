@@ -2008,11 +2008,20 @@ footer {
     margin-bottom: 20px; }
   footer i.fa-heart {
     color: #DE3C4B; }
-  footer i.fa.fa-linkedin-square,
-  footer i.fa.fa-github-alt {
+  footer a i.fa.fa-linkedin-square,
+  footer a i.fa.fa-github-alt {
     color: white;
     font-size: 4rem;
-    margin: 0 10px; }
+    margin: 0 10px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  footer a:hover i.fa.fa-linkedin-square,
+  footer a:focus i.fa.fa-linkedin-square {
+    color: #0077B5; }
+  footer a:hover i.fa.fa-github-alt,
+  footer a:focus i.fa.fa-github-alt {
+    color: #171516; }
 
 .fa-hdd-o:before {
   content: "\f0a0"; }

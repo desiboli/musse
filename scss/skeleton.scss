@@ -561,11 +561,26 @@ footer {
     color: #DE3C4B;
   }
 
-  i.fa.fa-linkedin-square,
-  i.fa.fa-github-alt {
-    color: white;
-    font-size: 4rem;
-    margin: 0 10px;
+  a {
+    i.fa.fa-linkedin-square,
+    i.fa.fa-github-alt {
+      color: white;
+      font-size: 4rem;
+      margin: 0 10px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    i.fa.fa-linkedin-square {
+      color: #0077B5;
+    }
+    i.fa.fa-github-alt {
+      color: #171516;
+    }
   }
 }
 
