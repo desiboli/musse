@@ -36,6 +36,13 @@
 	min-height: 54px;
 }
 
+.overlay ul li.info {
+	a {
+		display: inline-block;
+		font-size: 2rem;
+	}
+}
+
 .overlay ul li a {
 	font-weight: 300;
 	display: block;
