@@ -6,6 +6,12 @@
     // Activate WOW.js
     new WOW().init();
 
+    $('body').imagesLoaded().done( function( instance ) {
+      setTimeout(function(){
+        $('body').addClass('loaded');
+      }, 2000);
+    });
+
     // Cache the Window object
     var $window = $(window);
     // Get the window width
