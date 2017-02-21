@@ -1533,7 +1533,7 @@ a[class^="icon-"], a[class*=" icon-"], span[class^="icon-"], span[class*=" icon-
 .overlay nav {
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 40%;
   height: 60%;
   font-size: 54px;
   -webkit-transform: translateY(-50%);
@@ -1554,8 +1554,19 @@ a[class^="icon-"], a[class*=" icon-"], span[class^="icon-"], span[class*=" icon-
   min-height: 54px; }
 
 .overlay ul li.info a {
-  display: inline-block;
+  display: block;
   font-size: 2rem; }
+  @media (min-width: 550px) {
+    .overlay ul li.info a {
+      display: inline-block; } }
+
+.overlay ul li.info a.icon {
+  display: inline-block;
+  position: relative;
+  top: -35px; }
+  @media (min-width: 550px) {
+    .overlay ul li.info a.icon {
+      top: 0; } }
 
 .overlay ul li a {
   font-weight: 300;
