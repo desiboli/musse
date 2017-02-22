@@ -385,6 +385,7 @@ section#cv {
   color: white;
   display: block;
   width: 100%;
+  text-align: center;
   position: relative;
 
   // Larger than mobile
@@ -441,18 +442,15 @@ section#cv {
 
   /* Button 1e */
   a.download-cv {
+    border: 3px solid #fff;
     color: #fff;
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     transition: all 0.6s;
-
-    .btn-1 {
-      border: 3px solid #fff;
-    }
   }
 
   .btn-1e {
-    display: block;
+    //display: block;
   	overflow: hidden;
     margin: 50px auto 10px;
   }
@@ -470,8 +468,8 @@ section#cv {
   	transform: translateX(-50%) translateY(-50%) rotate(45deg);
   }
 
-  a .btn-1e:hover,
-  a .btn-1e:active {
+  .btn-1e:hover,
+  .btn-1e:active {
   	color: #DE3C4B;
   }
 
