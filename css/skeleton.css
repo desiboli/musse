@@ -1957,15 +1957,16 @@ section#cv {
     -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform: translateX(-50%) translateY(-50%) rotate(45deg); }
-  section#cv .btn-1e:hover,
-  section#cv .btn-1e:active {
-    color: #DE3C4B; }
-  section#cv .btn-1e:hover:after {
-    height: 260%;
-    opacity: 1; }
-  section#cv .btn-1e:active:after {
-    height: 400%;
-    opacity: 1; }
+  @media (min-width: 550px) {
+    section#cv .btn-1e:hover,
+    section#cv .btn-1e:active {
+      color: #DE3C4B; }
+    section#cv .btn-1e:hover:after {
+      height: 260%;
+      opacity: 1; }
+    section#cv .btn-1e:active:after {
+      height: 400%;
+      opacity: 1; } }
 
 section#contact {
   border-top: 1px solid;
