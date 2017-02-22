@@ -2050,7 +2050,8 @@ footer {
     color: #171516; }
   footer .fb-like {
     display: block;
-    margin: 2.5rem auto 0; }
+    margin: 2.5rem auto 0;
+    overflow: auto !important; }
 
 .fa-hdd-o:before {
   content: "\f0a0"; }
