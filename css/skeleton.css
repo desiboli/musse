@@ -1761,33 +1761,37 @@ header {
   background: #2C363F; }
 
 a.top {
-  position: fixed;
-  z-index: 1000;
-  right: 40px;
-  bottom: 55px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white;
-  line-height: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transform-origin: top right;
-  transform-origin: top right;
-  padding: 2px 10px 2px 35px;
   display: none;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out; }
-  a.top .fa-arrow-left {
-    height: 12px;
-    width: auto;
-    position: absolute;
-    left: 10px;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out; }
+  /* Larger than mobile */ }
+  @media (min-width: 400px) {
+    a.top {
+      position: fixed;
+      z-index: 1000;
+      right: 40px;
+      bottom: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
+      line-height: inherit;
+      text-transform: uppercase;
+      text-decoration: none;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+      padding: 2px 10px 2px 35px;
+      display: none;
+      -webkit-transition: all .5s ease-out;
+      transition: all .5s ease-out; }
+      a.top .fa-arrow-left {
+        height: 12px;
+        width: auto;
+        position: absolute;
+        left: 10px;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all .5s ease-out;
+        transition: all .5s ease-out; } }
 
 .tooltip {
   position: relative;
@@ -1967,6 +1971,8 @@ section#cv {
     section#cv .btn-1e:active:after {
       height: 400%;
       opacity: 1; } }
+  section#cv small {
+    display: block; }
 
 section#contact {
   border-top: 1px solid;
