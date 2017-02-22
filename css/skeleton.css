@@ -1828,6 +1828,12 @@ section#about {
     section#about {
       font-size: 2.5rem;
       letter-spacing: 4px; } }
+  section#about .circle {
+    width: 50%;
+    /* Larger than mobile */ }
+    @media (min-width: 750px) {
+      section#about .circle {
+        width: 100%; } }
 
 section#work .container {
   margin-top: 50px; }
