@@ -1831,9 +1831,9 @@ section#about {
   section#about .circle {
     width: 50%;
     /* Larger than mobile */ }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       section#about .circle {
-        width: 100%; } }
+        width: 13.3333333333%; } }
 
 section#work .container {
   margin-top: 50px; }

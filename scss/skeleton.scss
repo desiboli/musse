@@ -292,8 +292,8 @@ section#about {
     width: 50%;
 
     /* Larger than mobile */
-    @media (#{$bp-larger-than-tablet}) {
-      width: 100%;
+    @media (#{$bp-larger-than-phablet}) {
+      width: 13.3333333333%;
     }
   }
 }
