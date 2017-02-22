@@ -1829,8 +1829,7 @@ section#about {
       font-size: 2.5rem;
       letter-spacing: 4px; } }
   section#about .circle {
-    width: 50%;
-    /* Larger than mobile */ }
+    width: 50%; }
     @media (min-width: 550px) {
       section#about .circle {
         width: 13.3333333333%; } }
@@ -2049,6 +2048,9 @@ footer {
   footer a:hover i.fa.fa-github-alt,
   footer a:focus i.fa.fa-github-alt {
     color: #171516; }
+  footer .fb-like {
+    display: block;
+    margin: 2.5rem auto 0; }
 
 .fa-hdd-o:before {
   content: "\f0a0"; }
