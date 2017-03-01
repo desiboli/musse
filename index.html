@@ -40,6 +40,24 @@
 
 </head>
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1856692234578271',
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header class="header u-max-full-width">
     <!-- Logo -->
     <a href="#" class="logo">
@@ -383,6 +401,13 @@
 
     <a href="https://www.linkedin.com/in/mustafa-adam-alshamaa/" target="_blank"><i class="fa fa-linkedin-square wow rotateIn" data-wow-delay="500ms" aria-hidden="true"></i></a>
     <a href="https://github.com/desiboli" target="_blank"><i class="fa fa-github-alt wow rotateIn" data-wow-delay="500ms" aria-hidden="true"></i></a>
+
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
 
     <iframe class="fb-like" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmusse.me&width=107&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId=1856692234578271" width="107" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
   </footer>
