@@ -191,7 +191,13 @@
       <div class="row">
         <div class="one-half column work-image wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1s">
           <a href="http://www.ingmarbergman.se/" class="box" target="_blank">
-            <img class="u-max-full-width" src="images/work/bergman.png">
+            <!-- <img class="u-max-full-width" src="images/work/bergman.png"> -->
+            <picture>
+                <source srcset="images/work/bergman-large.jpg" media="(min-width: 750px)" />
+                <source srcset="images/work/bergman-tablet.jpg" media="(min-width: 400px)" />
+                <source srcset="images/work/bergman-mobile.jpg" media="(min-width: 0px)" />
+                <img class="u-max-full-width" srcset="images/work/bergman-mobile.jpg" alt="Ingmar Bergman" />
+            </picture>
             <div class="box-meta">
               <span class="top-box-meta-content">
                 <span class="icon icon-prog-drupal"></span>
@@ -226,7 +232,13 @@
         <div class="one-half column work-image wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1s">
           <div class="box">
             <a href="http://www.hemhyra.se/" class="box" target="_blank">
-              <img class="u-max-full-width" src="images/work/hemhyra.png">
+              <!-- <img class="u-max-full-width" src="images/work/hemhyra.png"> -->
+              <picture>
+                  <source srcset="images/work/hemhyra-large.jpg" media="(min-width: 750px)" />
+                  <source srcset="images/work/hemhyra-tablet.jpg" media="(min-width: 400px)" />
+                  <source srcset="images/work/hemhyra-mobile.jpg" media="(min-width: 0px)" />
+                  <img class="u-max-full-width" srcset="images/work/hemhyra-mobile.jpg" alt="Hem &amp; Hyra" />
+              </picture>
               <div class="box-meta">
                 <span class="top-box-meta-content">
                   <span class="icon icon-prog-wordpress"></span>
@@ -260,7 +272,13 @@
         <div class="one-half column work-image wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1s">
           <div class="box">
             <a href="http://byggindustrin.se/" class="box" target="_blank">
-              <img class="u-max-full-width" src="images/work/byggindustrin.png">
+              <!-- <img class="u-max-full-width" src="images/work/byggindustrin.png"> -->
+              <picture>
+                  <source srcset="images/work/byggindustrin-large.jpg" media="(min-width: 750px)" />
+                  <source srcset="images/work/byggindustrin-tablet.jpg" media="(min-width: 400px)" />
+                  <source srcset="images/work/byggindustrin-mobile.jpg" media="(min-width: 0px)" />
+                  <img class="u-max-full-width" srcset="images/work/byggindustrin-mobile.jpg" alt="Byggindustrin" />
+              </picture>
               <div class="box-meta">
                 <span class="top-box-meta-content">
                   <span class="icon icon-prog-drupal"></span>
@@ -294,7 +312,13 @@
         <div class="one-half column work-image wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1s">
           <div class="box">
             <a href="http://hatice.se/" class="box" target="_blank">
-              <img class="u-max-full-width" src="images/work/hatice.png">
+              <!-- <img class="u-max-full-width" src="images/work/hatice.png"> -->
+              <picture>
+                  <source srcset="images/work/hatice-large.jpg" media="(min-width: 750px)" />
+                  <source srcset="images/work/hatice-tablet.jpg" media="(min-width: 400px)" />
+                  <source srcset="images/work/hatice-mobile.jpg" media="(min-width: 0px)" />
+                  <img class="u-max-full-width" srcset="images/work/hatice-mobile.jpg" alt="Byggindustrin" />
+              </picture>
               <div class="box-meta">
                 <span class="top-box-meta-content">
                   <span class="icon icon-prog-wordpress"></span>
@@ -430,7 +454,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/picturefill.min.js"></script>
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/particles.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/typed.min.js"></script>
